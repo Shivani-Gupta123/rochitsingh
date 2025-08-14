@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
-<!-- Meta Pixel Code -->
+  <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -17,144 +18,108 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1520418595811875&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rochit Singh Official</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #000428, #004e92);
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      overflow-y: hidden;
-    }
+<!-- End Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rochit Singh Official</title>
+    <style>
+        body{
+            background: url("https://blogger.googleusercontent.com/img/a/AVvXsEg4iJPdwxPIwNvb-Ek-eaRWVA7YeJT5US6dJvF9Him4UTJNOkwo6PFw1crH4uNtJUvg6UhQ8pzDpfdkl6s-TQQB19Q16mKe6f-MxSnHUyJnfn8BVa3oUwGQDrxsbmxdJYbUBkkdYduH2MWqMcbC-XeedZNsWAch31OOp6OkRFMAoYr6SGNDBMAnw0UifDw");
+            background-repeat: no-repeat;
+            background-size: 100% 130%;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .container {
-      max-width: 500px;
-      margin: auto;
-      background: #111;
-      border-radius: 12px;
-      padding: 25px 15px;
-      box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
-    }
-
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 20px;
-      margin: 10px auto;
-      border: 4px solid #b1ff00;
-    }
-
-    h1 {
-      font-size: 28px;
-      margin-top: -20px;
-      margin-bottom: 10px;
-    }
-
-    .highlight {
-      font-size: 15px;
-      margin-bottom: 20px;
-      color: #ccc;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #28a745;
-      color: white;
-      padding: 12px 20px;
-      font-weight: bold;
-      margin: 10px 0;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 16px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #1e7e34;
-    }
-
-    .features {
-      margin: 20px 0;
-      text-align: left;
-    }
-
-    .features div {
-      margin: 10px 0;
-      font-size: 16px;
-    }
-
-    .emoji {
-      font-size: 20px;
-      margin-right: 6px;
-    }
-
-    .hurry {
-      margin-top: 20px;
-      color: #ff4c4c;
-      font-size: 20px;
-      font-weight: bold;
-      animation: pulse 0.7s infinite;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.7); }
-      100% { transform: scale(1); }
-    }
-
-    @keyframes blink {
-      0% { opacity: 1; }
-      50% { opacity: 0.5; }
-      100% { opacity: 1.2; }
-    }
-
-    .blinking {
-      animation: blink 1s infinite;
-      color: #ffff00;
-    }
-
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 18px;
+      .heading{
+        text-align: center;
       }
-      .features div {
-        font-size: 12px;
-      }
-      .btn {
-        font-size: 14px;
-        padding: 10px 16px;
-      }
-      .hurry {
-        font-size: 18px;
-      }
-    }
-  </style>
+
+        .counter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .container img {
+            border-radius: 50%;
+            width: 200px;
+            padding-bottom: 20px;
+        }
+
+        .btn {
+            animation-name: pulseBtn;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            background: linear-gradient(45deg, #5149ff, #ff8a73, #ff73e1, #49ffcc);
+            background-size: 200% 200%;
+            animation: bg-animation 5s ease infinite;
+            color: white;
+            padding: 20px 50px;
+            border-radius: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+            transition: all 0.4s ease-in-out;
+            position: relative;
+            z-index: 1;
+            cursor: pointer;
+        }
+
+        @media(max-width:568px){
+            p{
+                text-align: center;
+                font-size: 9px;
+            }
+        }
+    </style>
+
 </head>
+
 <body>
-  <div class="container">
-    <h1>👑Rochit Singh Official👑</h1>
-    <img src="image.png" alt="Rochit Singh" class="profile-pic" />
-    <p class="highlight">India's best Channel for #Nifty #Banknifty and #stocks call 🚀</p>
-
-    <a href="https://t.me/+-JZNq0Zs0BplMmM1" class="btn">✅ Join Telegram Channel ✅</a>
-
-    <div class="features">
-      <div>✅ PROPER RISK MANAGEMENT ✅</div>
-      <div>🥰 DAILY 3-4 FREE CALLS 🥰</div>
-      <div>📩 RECOVER ALL YOUR LOSSES NOW EARN 3-10K DAILY</div>
+    <div class="container">
+        <h1 class="heading">Rochit Singh Official</h1>
+        <span style="font-weight: bold; text-align: center;"> Rochit Singh : Your #1 Trading Source 🔥</span>
+        <div class="blink back counter"><span id="countdown">59</span><span style="font-size: 15px;"
+                class="blink">SECONDS</span>
+        </div>
+        <img src="image.png"
+            alt="logo">
+        <a href="https://t.me/+-JZNq0Zs0BplMmM1" target="_blank"><button class="btn">JOIN NOW FOR FREE</button></a>
+        <span style="margin-top: 45px; text-align: center;">Best Signals, Best Results</span>
+        <span style="margin-bottom: 20px; text-align: center;">The Best Trading Channel 💹</span>
+        <p>Disclaimer: This channel is for educational and informational purposes only. We do not provide investment advice or guaranteed returns. Trading in the stock market involves risk. Please consult your financial advisor before making any investment decisions.</p>
+        <p style="text-align: center; font-size: 12px;"><span style="color: #ffffff;"><strong>This Channel Advertise By <a target="_blank" href="https://wa.me/+99532473116"><span style="color: #ffff00; animation: blink 1s infinite;">Shiviadsagency</span></a></strong></span></p>
     </div>
 
-    <a href="https://t.me/+-JZNq0Zs0BplMmM1" class="btn">✅ Join Telegram Channel ✅</a>
 
-    <div class="hurry">‼️ HURRY UP ‼️</div>
+    <script>
+        let remainingSeconds = 60;
+        function updateCountdown() {
+            document.getElementById("countdown").innerHTML = `${remainingSeconds}`;
+            remainingSeconds -= 1;
+            if (remainingSeconds < 0) {
+                remainingSeconds = 60;
+            }
+        }
+        updateCountdown();
+        const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
 
-    <p style="text-align: center; font-size: 10px;"><span style="color: #ffffff;"><strong>This Channel Advertise By <a target="_blank" href="https://wa.me/+99532473116" class="blinking">Shiviadsagency</a></strong></span></p>
-  </div>
 </body>
+
+
+
 </html>
